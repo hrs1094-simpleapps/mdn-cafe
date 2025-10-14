@@ -1,0 +1,32 @@
+/*========== Button onclick animation ============*/
+.anim-container {
+    display: flex;
+    height: 24px;
+    justify-content: center;
+    align-items: center;
+}
+
+.anim-container > div {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--theme);
+    opacity: 1;
+    margin: 2px;
+    animation: anim-container 0.6s infinite alternate;
+}
+
+@keyframes anim-container {
+    to {
+        background-color: white;
+    }
+}
+
+.anim-container > div:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.anim-container > div:nth-child(3) {
+    animation-delay: 0.4s;
+}
+/*==================================================*/
