@@ -8,7 +8,7 @@ const defaultValue: UserInfo = {
   username: "",
   email: "",
   phoneNumber: "",
-  subscriptions: { snack: 0, lunch: 0, breakfast: 0 },
+  subscriptions: { snacks: 0, lunch: 0, breakfast: 0 },
 };
 
 interface UserInfoState {
