@@ -1,14 +1,16 @@
 {
-  "name": "tailadmin-react",
-  "private": true,
-  "version": "2.0.2",
+  "name": "mdn-cafe",
+  "homepage": "https://hrs1094-simpleapps.github.io/mdn-cafe/", 
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "start": "vite",
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@fullcalendar/core": "^6.1.15",
@@ -26,6 +28,7 @@
     "base64-js": "^1.5.1",
     "clsx": "^2.1.1",
     "flatpickr": "^4.6.13",
+    "gh-pages": "^6.3.0",
     "react": "^19.0.0",
     "react-apexcharts": "^1.7.0",
     "react-dnd": "^16.0.1",
