@@ -4,12 +4,12 @@ const PageMeta = ({
   title,
   description,
 }: {
-  title: string;
-  description: string;
+  title?: string;
+  description?: string;
 }) => (
   <Helmet>
-    <title>{title}</title>
-    <meta name="description" content={description} />
+    <title>{"MDN Cafe"}</title>
+    <meta name="description" content={"MDN Cafe, Food management"} />
   </Helmet>
 );
 
