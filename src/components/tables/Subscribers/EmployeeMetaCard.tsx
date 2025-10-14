@@ -24,7 +24,7 @@ export default function EmployeeMetaCard({
         <div className="flex flex-col gap-5 xl:flex-row xl:items-center xl:justify-between">
           <div className="flex flex-col items-center w-full gap-6 xl:flex-row">
             {/*  <div className="w-20 h-20 overflow-hidden border border-gray-200 rounded-full dark:border-gray-800">
-              <img src="/images/user/owner.jpg" alt="user" />
+              <img src="/mdn-cafe/images/user/owner.jpg" alt="user" />
             </div> */}
             <div className="flex items-center justify-center w-20 h-20 overflow-hidden border border-gray-200 rounded-full bg-brand-100">
               <h1 className="font-bold text-gray-800 text-title-sm dark:text-white/90">

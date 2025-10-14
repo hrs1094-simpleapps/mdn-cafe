@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router";
+import {   Routes, Route, Navigate, HashRouter } from "react-router";
 import SignIn from "./pages/AuthPages/SignIn";
 import SignUp from "./pages/AuthPages/SignUp";
 import NotFound from "./pages/OtherPage/NotFound";
@@ -33,7 +33,7 @@ export default function App() {
       baseColor={theme === "light" ? "#f2f4f7" : "#101828"}
       highlightColor={theme === "light" ? "#ffffff" : "#515a6cff"}
     >
-      <Router>
+      <HashRouter>
         <ScrollToTop />
         <Routes>
           {/* Auth Layout */}
@@ -80,7 +80,7 @@ export default function App() {
           {/* Fallback Route */}
           <Route path="*" element={<NotFound />} />
         </Routes>
-      </Router>
+      </HashRouter>
     </SkeletonTheme>
   );
 }
