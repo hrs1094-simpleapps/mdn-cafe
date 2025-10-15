@@ -59,11 +59,16 @@ export default function Registration() {
     closeModal();
   }, [subscribe, name, email, isBreakfast, isLunch, isSnacks, closeModal]);
 
+  const isValidEmail = (email: string) => {
+    const strictPattern = /^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[a-zA-Z]+$/;
+    return strictPattern.test(email);
+  };
   const handleSubmit = () => {
     setError("");
     setSuccess(false);
     if (
       email.trim() !== "" &&
+      isValidEmail(email.trim()) &&
       name.trim() !== "" &&
       !onSpotStatus?.isLoading &&
       !subscribeStatus?.isLoading
@@ -139,7 +144,17 @@ export default function Registration() {
     <div className="relative p-6 bg-white z-1 dark:bg-gray-900 sm:p-0">
       <div className="relative flex flex-col justify-center w-full lg:flex-row dark:bg-gray-900 sm:p-0">
         <ComponentCard
-          title="MDN CAFE"
+          title={
+            <>
+              <img
+                src="/mdn-cafe/images/logo/mdn.svg" //logo-icon.svg"
+                alt="Logo"
+                width={60}
+                height={60}
+              />
+              Manipal Dot Net
+            </>
+          }
           className="m-0 my-2 align-center  justify-center p-5"
         >
           <div className="flex justify-center">
@@ -181,7 +196,7 @@ export default function Registration() {
             {"Please select your option"}
           </h3>
           <ComponentCard title="Choose options">
-            <div className="flex items-center gap-4">
+            <div className="flex items-center gap-4 flex-wrap">
               <div className="flex items-center gap-3">
                 <Checkbox
                   checked={isBreakfast}

@@ -21,7 +21,7 @@ export default function AuthLayout({
                 <img
                   width={231}
                   height={48}
-                  src="/mdn-cafe/images/logo/mdnlog.webp"
+                  src="/mdn-cafe/images/logo/mdnlog_dark.svg"
                   alt="Logo"
                 />
               </Link>

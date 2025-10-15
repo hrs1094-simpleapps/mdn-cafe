@@ -310,14 +310,14 @@ const AppSidebar: React.FC = () => {
             <>
               <img
                 className="dark:hidden"
-                src="/mdn-cafe/images/logo/mdnlog.webp"//logo.svg"
+                src="/mdn-cafe/images/logo/mdnlog_light.svg"//logo.svg"
                 alt="Logo"
                 width={150}
                 height={40}
               />
               <img
                 className="hidden dark:block"
-                src="/mdn-cafe/images/logo/mdnlog.webp"//logo-dark.svg"
+                src="/mdn-cafe/images/logo/mdnlog_dark.svg"//logo-dark.svg"
                 alt="Logo"
                 width={150}
                 height={40}
@@ -325,7 +325,7 @@ const AppSidebar: React.FC = () => {
             </>
           ) : (
             <img
-              src="/mdn-cafe/images/logo/mdnlog.webp"//logo-icon.svg"
+              src="/mdn-cafe/images/logo/mdnlog.svg"//logo-icon.svg"
               alt="Logo"
               width={32}
               height={32}

@@ -58,6 +58,7 @@ export default function SubscribersDashBoard() {
   const month = `${monthNames[currentMonth]}`;
   const report = data?.data[month];
   const monthlyTotal = monthNames.map((month) => data?.data[`${month}`]?.total);
+  //Todo * 30 for monthly
   const totalAmount =
     report.breakfast * 5 + report.lunch * 10 + report.snacks * 5;
 
@@ -80,9 +81,9 @@ export default function SubscribersDashBoard() {
         <div className="col-span-12 space-y-6 xl:col-span-7">
           <FoodMetrics
             subscriptions={report.total}
-            total={totalAmount}
+            total={totalAmount * 30}
             prevSub={prevMonthTotalSub}
-            prevTotal={prevMonthTotalAmt}
+            prevTotal={prevMonthTotalAmt * 30}
           />
           <MonthlyChart data={monthlyTotal} />
         </div>
